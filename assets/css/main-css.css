@@ -618,14 +618,20 @@ section.whats-trending .right-image::after {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
-  background: url(../images/whats-trending-right-image.png);
+  background-image: linear-gradient(
+      rgba(66, 2, 2, 0.5),
+      rgba(41, 32, 32, 0.945)
+    ), url(../images/whats-trending-right-image.png);
   content: "";
 }
 
 section.contact-us {
   margin-top: 60px;
   padding: 60px 0px;
-  background-image: url(../images/contact-us-bg.jpg);
+  background-image:  linear-gradient(
+      rgba(66, 2, 2, 0.5),
+      rgba(41, 32, 32, 0.993)
+    ),url(../images/contact-us-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1582,5 +1588,10 @@ section.contact-us-page .right-info ul li span {
 }
 /*# sourceMappingURL=style.css.map */
 .row {
+  justify-content: center;
+}
+.about-widget{
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
