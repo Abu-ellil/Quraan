@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    background-color: #555;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vv;
+}
+.container{
+    color: #fff;
+}
+.location{
+    border-bottom: 1px #228899 solid;
+    padding-bottom: 2rem;
+}
+#city{
+    font-size: 7rem;
+}
+#date{
+    font-size: 3rem;
+    color: #228899;
+}
+.prayer-times{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 2rem;
+}
+.time{
+    width: 150px;
+    height: 150px;
+    border: 1px #777 solid;
+    box-shadow: 0px 1px 24px rgba(0,0,0,0.4);
+}
+#pry-text{
+    width: 100%;
+    background-color: #228899;
+}
+#pry-time-placeholder{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 3rem;
+    color: #228899;
+}
+
+
