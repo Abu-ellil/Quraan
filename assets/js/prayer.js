@@ -14,7 +14,7 @@ const getGeo = async () => {
 dateSet.innerHTML = fullDate
         try {
           const response = await fetch(
-            `http://api.aladhan.com/v1/timings/${fullDate}?latitude=${latitude}&longitude=${longitude}&method=2`
+            `https://api.aladhan.com/v1/timings/${fullDate}?latitude=${latitude}&longitude=${longitude}&method=2`
           );
 
           if (!response.ok) {
