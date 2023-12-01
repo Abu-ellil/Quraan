@@ -737,7 +737,7 @@ footer {
 }
 
 footer .about-widget img {
-  max-width: 273px;
+  max-width: 200px;
   margin-bottom: 45px;
 }
 
@@ -1581,3 +1581,6 @@ section.contact-us-page .right-info ul li span {
   color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
+.row {
+  justify-content: center;
+}

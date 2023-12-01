@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    direction: rtl;
+    /* direction: rtl; */
     background-color: #555;
     /* display: flex; */
     align-items: center;
@@ -15,21 +15,25 @@ body{
     color: #fff;
 }
 .location{
-    border-bottom: 1px #228899 solid;
+    border-bottom: 1px #ff565b solid;
     padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #city{
-    font-size: 7rem;
+    font-size: 5rem;
 }
 #date{
     font-size: 3rem;
-    color: #228899;
+    color: #ff565b;
 }
 .prayer-times{
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
     padding-top: 2rem;
 }
 .time{
@@ -38,9 +42,10 @@ body{
     border: 1px #777 solid;
     box-shadow: 0px 1px 24px rgba(0,0,0,0.4);
 }
+
 #pry-text{
     width: 100%;
-    background-color: #228899;
+    background-color: #ff565b;
 }
 #pry-time-placeholder{
     background-color: #fff;
@@ -49,7 +54,14 @@ body{
     justify-content: center;
     height: 100%;
     font-size: 3rem;
-    color: #228899;
+    color: #ff565b;
+}
+#getLocationButton{
+    background-color: #ff565b;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
 }
 
 

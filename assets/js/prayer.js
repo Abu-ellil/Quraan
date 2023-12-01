@@ -1,4 +1,5 @@
 const getMyGeo = document.querySelector("#getLocationButton");
+const dateSet = document.querySelector("#date");
 
 const getGeo = async () => {
   if ("geolocation" in navigator) {
@@ -10,7 +11,7 @@ const getGeo = async () => {
         const fullDate = `${new Date().getDate()}-${
           new Date().getMonth() + 1
         }-${new Date().getFullYear()}`;
-
+dateSet.innerHTML = fullDate
         try {
           const response = await fetch(
             `http://api.aladhan.com/v1/timings/${fullDate}?latitude=${latitude}&longitude=${longitude}&method=2`
@@ -45,3 +46,6 @@ const getGeo = async () => {
     console.error("Geolocation is not supported by your browser.");
   }
 };
+
+
+getGeo()
